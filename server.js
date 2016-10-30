@@ -1,9 +1,15 @@
-var http = require('http');
+'use strict';
 
-var server = http.createServer(function(req,res){
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.end('<h1>Hello World</h1>');
-	});
-var port = Number(process.env.PORT || 3000);
+const express = require('express');
 
-server.listen(port);
+// Constants
+const PORT = 8080;
+
+// App
+const app = express();
+app.get('/', function (req, res) {
+  res.send('Hello world\n');
+});
+
+app.listen(PORT);
+console.log('Running on http://localhost:' + PORT);
