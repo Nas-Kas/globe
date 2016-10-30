@@ -1,0 +1,12 @@
+{
+  "name": "finalglobe",
+  "version": "1.0.0",
+  "description": "The **WebGL Globe** is an open platform for geographic data visualization created by the Google Data Arts Team. We encourage you to copy the code, add your own data, and create your own globes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "nasir",
+  "license": "ISC"
+}
